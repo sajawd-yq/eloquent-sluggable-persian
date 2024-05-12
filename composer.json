@@ -1,5 +1,5 @@
 {
-    "name": "cviebrock/eloquent-sluggable",
+    "name": "sajawd-yq/eloquent-sluggable-persian",
     "description": "Easy creation of slugs for your Eloquent models in Laravel",
     "keywords": [
         "eloquent-sluggable",
@@ -9,12 +9,12 @@
         "lumen",
         "slug"
     ],
-    "homepage": "https://github.com/cviebrock/eloquent-sluggable",
+    "homepage": "https://github.com/sajawd-yq/eloquent-sluggable-persian.git",
     "license": "MIT",
     "authors": [
         {
-            "name": "Colin Viebrock",
-            "email": "colin@viebrock.ca"
+            "name": "sajad yq",
+            "email": "sajad.yq79@gmail.com"
         }
     ],
     "require": {
