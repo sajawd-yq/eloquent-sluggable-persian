@@ -19,7 +19,13 @@ trait Sluggable
      */
     public static function bootSluggable(): void
     {
-        static::observe(app(SluggableObserver::class));
+        static::saving(
+            static fn (Model $model) => app(SluggableObserver::class)->saving($model)
+        );
+
+        static::saved(
+            static fn (Model $model) => app(SluggableObserver::class)->saved($model)
+        );
     }
 
     /**
