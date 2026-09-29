@@ -1,19 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<phpunit 
-    backupGlobals="false" 
-    backupStaticProperties="false"
-    bootstrap="vendor/autoload.php" 
-    cacheDirectory=".phpunit.cache" 
-    colors="true" 
-    processIsolation="false" 
-    stopOnFailure="true" 
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-    xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/10.0/phpunit.xsd"
-  >
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" backupGlobals="false" backupStaticProperties="false" bootstrap="vendor/autoload.php" cacheDirectory=".phpunit.cache" colors="true" processIsolation="false" stopOnFailure="true" xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/12.5/phpunit.xsd">
   <coverage>
-    <include>
-      <directory suffix=".php">src/</directory>
-    </include>
     <report>
       <clover outputFile="build/clover.xml"/>
       <html outputDirectory="build/coverage"/>
@@ -28,4 +15,9 @@
   <logging>
     <junit outputFile="build/report.junit.xml"/>
   </logging>
+  <source>
+    <include>
+      <directory suffix=".php">src/</directory>
+    </include>
+  </source>
 </phpunit>

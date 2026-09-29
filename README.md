@@ -95,10 +95,12 @@ automatically, with minimal configuration.
 Depending on your version of Laravel, you should install a different
 version of the package.
 
-> **NOTE:** As of version 6.0, the package's version should match the Laravel version.
+> **NOTE:** The current package release supports both Laravel 12 and Laravel 13.
 
 | Laravel Version | Package Version |
 |:---------------:|:---------------:|
+|      13.0       |     ^10.0       |
+|      12.0       |     ^10.0       |
 |      10.0       |     ^10.0       |
 |       9.0       |      ^9.0       |
 |       8.0       |      ^8.0       |

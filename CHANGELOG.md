@@ -1,5 +1,11 @@
 # Change Log
 
+## Unreleased
+
+- add Laravel 13 support while retaining Laravel 12 compatibility
+- update the test stack to Testbench 10/11 and Pest 3/4
+- register model events without instantiating a model during its boot cycle
+
 ## 10.0.0 - 16-Feb-2023
 
 - Laravel 10 support

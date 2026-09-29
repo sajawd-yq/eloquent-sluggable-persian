@@ -18,17 +18,16 @@
         }
     ],
     "require": {
-        "php": "^8.1",
+        "php": "^8.2",
         "cocur/slugify": "^4.3",
-        "illuminate/config": "^12.0",
-        "illuminate/database": "^12.0",
-        "illuminate/support": "^12.0"
+        "illuminate/config": "^12.0 || ^13.0",
+        "illuminate/database": "^12.0 || ^13.0",
+        "illuminate/support": "^12.0 || ^13.0"
     },
     "require-dev": {
-        "limedeck/phpunit-detailed-printer": "^6.0",
-        "mockery/mockery": "^1.4.4",
-        "orchestra/testbench": "^8.0",
-        "pestphp/pest": "2.x-dev"
+        "mockery/mockery": "^1.6.10",
+        "orchestra/testbench": "^10.0 || ^11.0",
+        "pestphp/pest": "^3.0 || ^4.0"
     },
     "autoload": {
         "psr-4": {
@@ -46,7 +45,10 @@
             "composer install"
         ],
         "tests": [
-            "php vendor/bin/pest"
+            "php vendor/bin/pest --no-coverage"
+        ],
+        "tests:coverage": [
+            "php -d xdebug.mode=coverage vendor/bin/pest --coverage"
         ]
     },
     "extra": {
@@ -56,7 +58,6 @@
             ]
         }
     },
-    "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
         "sort-packages": true,
